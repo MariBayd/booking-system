@@ -1,1 +1,1 @@
-# booking-system
+Project for the hotel room booking system.
