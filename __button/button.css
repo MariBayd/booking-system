@@ -1,0 +1,29 @@
+.button {
+    width: 99px;
+    height: 44px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button__text { 
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.button__text__white {
+    color: white;
+}
+
+.button_text_purpule {
+    color: #BC9CFF;
+}
+
+.button__gradient-background {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
