@@ -21,9 +21,17 @@
 }
 
 .button_text_purpule {
-    color: #BC9CFF;
+   color: #BC9CFF;
 }
 
 .button__gradient-background {
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.button_gradient-border {
+    border: 2px solid purple;
+}
+
+.button__disabled {
+    opacity: 0.5;
 }
