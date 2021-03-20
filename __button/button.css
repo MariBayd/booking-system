@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 
 .button__text { 
@@ -20,8 +21,13 @@
     color: white;
 }
 
-.button_text_purpule {
+.button__text__purpule {
    color: #BC9CFF;
+}
+
+.button__text__grey {
+    color: #1F2041;
+    opacity: 0.5;
 }
 
 .button__gradient-background {
@@ -29,7 +35,7 @@
 }
 
 .button_gradient-border {
-    border: 2px solid purple;
+
 }
 
 .button__disabled {
