@@ -1,3 +1,8 @@
+body {
+    background: yellow;
+
+}
+
 .button {
     width: 99px;
     height: 44px;
@@ -5,7 +10,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
 }
 
 .button__text { 
@@ -15,6 +19,7 @@
     line-height: 15px;
     text-transform: uppercase;
     text-decoration: none;
+    z-index: 1;
 }
 
 .button__text__white {
@@ -35,9 +40,34 @@
 }
 
 .button_gradient-border {
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    color: #FFF;
+    background-clip: padding-box; /* !important */
+    border-radius: 22px;
+}
 
+.button_gradient-border:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    border-radius: inherit; /* !importanté */
+    border-radius: 22px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.button_gradient-border:after {
+    content: '';
+    position: absolute;
+    top: 2px; right: 2px; bottom: 2px; left: 2px;
+    border-radius: inherit; /* !importanté */
+    background: white;
+    border-radius: 22px;
 }
 
 .button__disabled {
     opacity: 0.5;
 }
+
