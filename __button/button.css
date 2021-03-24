@@ -1,10 +1,29 @@
+body {
+    background: yellow;
+}
+
 .button {
     width: 99px;
     height: 44px;
     border-radius: 22px;
+}
+
+.button__wrap-for-only-text {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.button__wrap-for-text-and-arrow {
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.button__arrow-forward {
+    background: url("arrow-forward.svg") no-repeat;
+    position: absolute;
+    z-index: 2;
 }
 
 .button__text { 
