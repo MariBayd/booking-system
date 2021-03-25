@@ -1,9 +1,9 @@
 mixin new-checkbox(id, label__text, state)
     if state
-        input(type="checkbox" id=id checked)
+        input(type="checkbox" id=id class="checkbox-custom" checked)
     else
-        input(type="checkbox" id=id)
-    label(for=id class="checkbox__text")=label__text 
+        input(type="checkbox" id=id class="checkbox-custom")
+    label(for=id class="label__text label-for-checbox")=label__text 
 
 
 link(rel="stylesheet" href="checkbox-button.css")
