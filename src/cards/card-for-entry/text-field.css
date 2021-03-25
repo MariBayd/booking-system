@@ -1,0 +1,39 @@
+.text-field {
+    width: 320px;
+    height: 44px;
+    margin-top: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.text-field:hover {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.text-field__text {
+    height: 18px;
+    text-transform: capitalize;
+    padding: 13px 0 13px 15px;
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.text-field__text:hover,
+.text-field__text:focus {
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.text-field__label {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+.text-field__wrapper {
+    display: flex;
+    flex-direction: column;
+}
