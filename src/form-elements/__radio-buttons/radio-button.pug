@@ -1,0 +1,10 @@
+mixin new-radio-button(id, state, label_text)
+    if state
+        input(type="radio" value=label_text id=id checked)
+    else 
+        input(type="radio" value=label_text id=id)
+    label(for=id class="radio-button__label__text")=label_text
+
+
+link(rel="stylesheet" href="radio-button.css")
++new-radio-button("sex", 0, "Man")
