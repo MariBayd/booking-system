@@ -1,11 +1,11 @@
-mixin new-checkbox(id, label__text, state)
+mixin new-checkbox(id, label__text,classes_input, classes_label, state)
     if state
-        input(type="checkbox" id=id class="checkbox-custom" checked)
+        input(type="checkbox" id=id class=classes_input checked)
     else
-        input(type="checkbox" id=id class="checkbox-custom")
-    label(for=id class="checkbox-button__label__text label-for-checbox")=label__text 
+        input(type="checkbox" id=id class=classes_input)
+    label(for=id class=classes_label)=label__text 
 
 
 link(rel="stylesheet" href="checkbox-button.css")
-+new-checkbox("sex", "Man", 0)
+
 

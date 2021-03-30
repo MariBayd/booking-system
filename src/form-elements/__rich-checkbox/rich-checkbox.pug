@@ -1,7 +1,9 @@
-mixin text-to-p(text)
-    p(class="rich-checkbox__description__text rich-checkbox__description__text-position")=text
+include C:\Masha\frontend\booking-system\src\form-elements\__checkbox-button\checkbox-button.pug
+
+mixin text-to-p(text, classes)
+    p(class=classes)=text
 
 html(lang="ru")
 link(rel="stylesheet", href="rich-checkbox.css")
-include C:\Masha\frontend\booking-system\src\form-elements\__checkbox-button\checkbox-button.pug
-+text-to-p("Миша смешной!")
++new-checkbox("kor", "Широкий коридор" ,"checkbox-custom","rich-checkbox__label__text label-for-checbox", 0)
++text-to-p("Миша смешной!", "rich-checkbox__description__text rich-checkbox__description__text-position")
