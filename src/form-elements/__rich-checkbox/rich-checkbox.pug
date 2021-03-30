@@ -1,0 +1,7 @@
+mixin text-to-p(text)
+    p(class="rich-checkbox__description__text rich-checkbox__description__text-position")=text
+
+html(lang="ru")
+link(rel="stylesheet", href="rich-checkbox.css")
+include C:\Masha\frontend\booking-system\src\form-elements\__checkbox-button\checkbox-button.pug
++text-to-p("Миша смешной!")

@@ -1,0 +1,23 @@
+.rich-checkbox__label__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;    
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.rich-checkbox__description__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.rich-checkbox__description__text-position {
+    margin: 5px auto 5px 30px;
+    width: 220px;
+    word-wrap: break-word;
+}
