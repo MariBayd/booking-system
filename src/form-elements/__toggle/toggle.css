@@ -1,0 +1,38 @@
+.toggle__label__text {
+    margin-left: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.toggle__wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.toggle {
+    margin-top: 3px;
+    box-sizing: border-box;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.toggle__theme-default-state {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    background-image: url("toggle__default.svg");
+    background-repeat: no-repeat;
+    background-position: 4px;
+}
+
+.toggle__theme-checked-state {
+    border: 1px solid #BC9CFF;
+    background-image: url("toggle__checked.svg");
+    background-repeat: no-repeat;
+    background-position: 23px;
+}
+

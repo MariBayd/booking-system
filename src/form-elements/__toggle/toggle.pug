@@ -1,0 +1,8 @@
+link(rel="stylesheet", href="toggle.css")
+
+mixin new_toggle(toggle_classes, label_classes, id, text_label)
+    div(class="toggle__wrap")
+        div(class=toggle_classes id=id)
+        label(for=id class=label_classes)=text_label 
+
++new_toggle("toggle toggle__theme-checked-state", "toggle__label__text", "maling", "Получать спецпредложения")
