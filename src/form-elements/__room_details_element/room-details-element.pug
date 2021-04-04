@@ -1,0 +1,10 @@
+mixin new_elem(img_url, img_classes, title, title_classes, description, description_classes )
+    div.wrapper_row
+        img(src=img_url class=img_classes)
+        div
+            p(class=title_classes)=title 
+            p(class=description_classes)=description 
+
+
+link(rel="stylesheet", href="room-details-element.css")
++new_elem("location_city.svg","room-details-element__img", "комфорт","title", "Шумопоглащающие стены", "text")
