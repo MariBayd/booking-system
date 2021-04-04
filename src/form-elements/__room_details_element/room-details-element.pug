@@ -1,5 +1,5 @@
-mixin new_elem(img_url, img_classes, title, title_classes, description, description_classes )
-    div.wrapper_row
+mixin new_elem(wrapper_classes, img_url, img_classes, title, title_classes, description, description_classes )
+    div(class=wrapper_classes)
         img(src=img_url class=img_classes)
         div
             p(class=title_classes)=title 

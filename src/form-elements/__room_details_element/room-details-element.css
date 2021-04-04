@@ -34,4 +34,10 @@
     margin-right: 10px;
 }
 
+.room-details-element__underline {
+    width: 250px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+}
+
 
