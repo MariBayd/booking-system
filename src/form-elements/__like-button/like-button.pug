@@ -3,4 +3,4 @@ link(rel="stylesheet", href="like-button.css")
 mixin new-like-button(classes, id, value)
     div(class=classes id=id)=value
 
-+new-like-button("like-button like-button__checked-theme like-button__checked-theme-text", "like", 3)
++mixin("like-button like-button__checked-theme like-button__checked-theme-text", "3")

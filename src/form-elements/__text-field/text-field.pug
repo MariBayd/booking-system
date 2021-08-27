@@ -1,11 +1,12 @@
-mixin input(text) 
-    input(type='text' class='text-field text-field__text' value=text)
+mixin new-text-field(id, input-classes, label-classes, text, label-title) 
+    div(class="text-field__wrapper")
+        input(type='text' class=input-classes id=id)
+        label(class=label-classes for=id)=label-title
 
-mixin label(title)
-    label.text-field__label=title 
-    
+mixin new_text-field_with-mask(id, input-classes, mask, label-classes, label-title, text)
+    div(class="text-field__wrapper")
+        input(type='text' class=input-classes id=id pattern=mask value="ДД.ММ.ГГГГ")
+        label(class=label-classes for=id)=label-title
+   
      
 link(rel="stylesheet" href="text-field.css")
-div(class="text-field__wrapper")
-    +label("text field") 
-    +input("email")
