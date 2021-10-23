@@ -1,4 +1,5 @@
-link(rel="stylesheet" href="button.css")
-div(class="button button__wrap-for-only-text button__gradient-background")
-    a(class="button__text button__text__white" href="#") click me
+mixin new-button(button_classes, button_wrap_classes, button_title)
+    div(class=button_classes)
+        a(class=button_wrap_classes href='#')= button_title
+
 
