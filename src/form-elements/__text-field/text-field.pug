@@ -1,7 +1,7 @@
 mixin new-text-field(input_id, input_classes, label_classes, text, label_title) 
     div(class='text-field__wrapper')
         label(class=label_classes for=input_id)=label_title
-        input(type="text" class=input_classes id=input_id)
+        input(type="text" class=input_classes id=input_id value=text onfocus="this.value=''")
         
 
 
