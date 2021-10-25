@@ -1,13 +1,18 @@
 <head><script defer src="bundle.js"></script></head>
 <link rel="stylesheet" href="../src/form-elements/__text-field/text-field.css">
 <link rel="stylesheet" href="../src/form-elements/__button/button.css">
-<h1>Войти</h1>
-<div class="text-field__wrapper">
-  <label class="text-field__label" for="email"></label>
-  <input class="text-field text-field__text " type="text" id="email" value="Email" onfocus="this.value=''">
+<link rel="stylesheet" href="../src/cards/styles-for-cards/card_background.css">
+<link rel="stylesheet" href="../src/cards/card-for-entry/card-for-entry.pug">
+<div class="card_wrapper card_background">
+  <h1 class="title_position">Войти</h1>
+  <div class="text-field__wrapper">
+    <label class="text-field__label" for="email"></label>
+    <input class="text-field text-field__text " type="text" id="email" value="Email" onfocus="this.value=''">
+  </div>
+  <div class="text-field__wrapper">
+    <label class="text-field__label" for="password"></label>
+    <input class="text-field text-field__text " type="text" id="password" value="Пароль" onfocus="this.value=''">
+  </div>
+  <p>Нет аккаунта на TOXIN?</p>
 </div>
-<div class="text-field__wrapper">
-  <label class="text-field__label" for="password"></label>
-  <input class="text-field text-field__text " type="text" id="password" value="Пароль" onfocus="this.value=''">
-</div>
-<div class="button button__wrap-for-only-text button__gradient-background"><a class="button__text button__text__white" href="#">Войти</a></div>
+<div class="button_position button button__wrap-for-only-text button__gradient-background"><a class="button__text button__text__white" href="#">Войти</a></div>

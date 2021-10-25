@@ -3,11 +3,21 @@ include ../../form-elements/__text-field/text-field.pug
 
 link(rel="stylesheet" href="../src/form-elements/__text-field/text-field.css")
 link(rel="stylesheet", href="../src/form-elements/__button/button.css")
+link(rel="stylesheet", href="../src/cards/styles-for-cards/card_background.css")
+link(rel="stylesheet", href="../src/cards/card-for-entry/card-for-entry.pug")
 
-h1 Войти
-+new-text-field("email", "text-field text-field__text ", "text-field__label", "Email", "")
-+new-text-field("password", "text-field text-field__text ", "text-field__label", "Пароль", "")
-+new-button("button button__wrap-for-only-text button__gradient-background", "button__text button__text__white", "Войти")
+div(class="card_wrapper card_background")
+    h1(class="title_position") Войти
+    +new-text-field("email", "text-field text-field__text ", "text-field__label", "Email", "")
+    +new-text-field("password", "text-field text-field__text ", "text-field__label", "Пароль", "")
+    p Нет аккаунта на TOXIN?
+
++new-button("button_position button button__wrap-for-only-text button__gradient-background", "button__text button__text__white", "Войти")
+   
+
+    
+
+   
 
     
   
