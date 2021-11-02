@@ -5,12 +5,11 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode:  "development",
-  entry: "C:/Masha/frontend/booking-system/src/cards/card-for-entry/card-for-entry.pug",
+  entry: "/src/cards/card-for-entry/card-for-entry.pug",
   output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js'
-
-  },
+      },
     module: {
         rules: [
           {
@@ -22,23 +21,18 @@ module.exports = {
                 presets: ['@babel/preset-env']
               }
             }
-          }
-        ]
-      },
-      module: {
-        rules: [
+          },
           {
             test: /\.pug$/,
             use: [
               {
-                loader: 'simple-pug-loader'
+                loader: 'simple-pug-loader',
+                options:{
+                  pretty: true
+                }
               }
-            ]
-          }
-        ]
-      },
-      module: {
-        rules: [
+            ],
+          },
           {
             test: /\.s[ac]ss$/i,
             use: [
@@ -50,19 +44,17 @@ module.exports = {
               "sass-loader",
             ],
           },
-        ],
-      },
-      module: {
-        rules: [
           {
             test: /\.css$/i,
             use: [MiniCssExtractPlugin.loader, "css-loader"],
           },
-        ],
-      },
-      plugins: [
-        new MiniCssExtractPlugin()
-      ]
+        ]
+    },
+    plugins: [
+      new HtmlWebpackPlugin({
+        template:'src/cards/card-for-entry/card-for-entry.pug'
+      })
+    ]
 };
 
  
