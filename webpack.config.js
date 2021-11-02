@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode:  "development",
-  entry: "/src/cards/card-for-entry/card-for-entry.pug",
+  entry: ["/src/cards/card-for-entry/card-for-entry.pug", "/src/styles/fonts.scss"],
   output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js'
@@ -34,26 +34,16 @@ module.exports = {
             ],
           },
           {
-            test: /\.s[ac]ss$/i,
-            use: [
-              // Creates `style` nodes from JS strings
-              "style-loader",
-              // Translates CSS into CommonJS
-              "css-loader",
-              // Compiles Sass to CSS
-              "sass-loader",
-            ],
-          },
-          {
-            test: /\.css$/i,
-            use: [MiniCssExtractPlugin.loader, "css-loader"],
-          },
+            test: /\.(s(a|c)ss)$/,
+            use: [MiniCssExtractPlugin.loader,'css-loader', 'sass-loader']
+         }        
         ]
     },
     plugins: [
       new HtmlWebpackPlugin({
         template:'src/cards/card-for-entry/card-for-entry.pug'
-      })
+      }),
+      new MiniCssExtractPlugin()
     ]
 };
 
