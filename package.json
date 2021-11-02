@@ -1,0 +1,35 @@
+{
+  "name": "booking-system",
+  "version": "1.0.0",
+  "description": "Project for the hotel room booking system.",
+  "dependencies": {
+    "css-loader": "^6.5.0",
+    "html-webpack-plugin": "^5.5.0",
+    "pug": "^3.0.2",
+    "saas": "^1.0.0",
+    "style-loader": "^3.3.1",
+    "webpack-cli": "^4.9.1"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.4.3",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
+    "simple-pug-loader": "^0.2.1",
+    "webpack": "^5.61.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariBayd/booking-system.git"
+  },
+  "author": "Mariya Baydina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariBayd/booking-system/issues"
+  },
+  "homepage": "https://github.com/MariBayd/booking-system#readme"
+}
