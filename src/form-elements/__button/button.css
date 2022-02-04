@@ -1,5 +1,6 @@
 .button {
     height: 44px;
+    width: 400px;
     border-radius: 22px;
 }
 
@@ -22,12 +23,8 @@
 }
 
 .button__text { 
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
     text-decoration: none;
+    font-weight: 700;
     z-index: 1;
 }
 

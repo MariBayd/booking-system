@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode:  "development",
-  entry: ["/src/cards/card-for-entry/card-for-entry.pug", "/src/styles/fonts.scss"],
+  entry: ["/src/form-elements/__button/button.pug"],
   output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js'
@@ -41,7 +41,7 @@ module.exports = {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template:'src/cards/card-for-entry/card-for-entry.pug'
+        template:'src/form-elements/__button/button.pug'
       }),
       new MiniCssExtractPlugin()
     ]

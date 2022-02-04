@@ -1,5 +1,7 @@
 mixin new-button(button_classes, button_wrap_classes, button_title)
     div(class=button_classes)
-        a(class=button_wrap_classes href='#')= button_title
+        a(class=button_wrap_classes href="#")= button_title
 
-
+link(rel="stylesheet", href="../src/form-elements/__button/button.css")
+link(rel="stylesheet", href="../src/styles/fonts.css")
++new-button("button button__wrap-for-text-and-arrow button__gradient-background button__arrow-forward", "button__text button__text__white", "Войти")
