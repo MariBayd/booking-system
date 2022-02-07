@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode:  "development",
-  entry: ["/src/form-elements/__button/button.pug"],
+  entry: ["/src/form-elements/__button/button.pug", "/src/styles/colors.scss"],
   output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js'

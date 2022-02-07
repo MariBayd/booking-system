@@ -9,6 +9,17 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/styles/colors.scss":
+/*!********************************!*\
+  !*** ./src/styles/colors.scss ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://booking-system/./src/styles/colors.scss?");
+
+/***/ }),
+
 /***/ "./node_modules/pug-runtime/index.js":
 /*!*******************************************!*\
   !*** ./node_modules/pug-runtime/index.js ***!
@@ -67,11 +78,24 @@ eval("/* (ignored) */\n\n//# sourceURL=webpack://booking-system/fs_(ignored)?");
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module is referenced by other modules so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/form-elements/__button/button.pug");
+/******/ 	__webpack_require__("./src/form-elements/__button/button.pug");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/styles/colors.scss");
 /******/ 	
 /******/ })()
 ;
